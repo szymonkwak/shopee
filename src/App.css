@@ -1,3 +1,13 @@
+:root {
+  --bglight: rgb(207, 213, 232);
+  --bgdark: rgb(61, 70, 82);
+}
+
 html {
   font-family: 'Lato', sans-serif;
+}
+
+button {
+  border: none;
+  padding: 4px 8px;
 }

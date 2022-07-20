@@ -1,0 +1,14 @@
+.container {
+  overflow: hidden;
+  margin: 0.5em;
+  display: flex;
+  border: 2px solid black;
+  gap: 1em;
+  max-width: 520px;
+  max-height: 350px;
+}
+
+.picture {
+  object-fit: contain;
+  max-width: 50%;
+}
