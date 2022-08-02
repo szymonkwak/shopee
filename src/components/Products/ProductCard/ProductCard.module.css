@@ -2,13 +2,19 @@
   overflow: hidden;
   margin: 0.5em;
   display: flex;
+  justify-content: space-between;
   border: 2px solid black;
   gap: 1em;
-  max-width: 520px;
-  max-height: 350px;
+  max-width: 500px;
+  max-height: 300px;
+}
+
+.product {
+  margin-right: 0.5rem;
 }
 
 .picture {
   object-fit: contain;
+  object-position: left;
   max-width: 50%;
 }
