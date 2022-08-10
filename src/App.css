@@ -1,6 +1,7 @@
 :root {
   --bglight: rgb(207, 213, 232);
   --bgdark: rgb(61, 70, 82);
+  --btnbackground: #e7e7e7;
 }
 
 html {
@@ -8,6 +9,19 @@ html {
 }
 
 button {
-  border: none;
+  border: 2px solid #000;
   padding: 4px 8px;
+  cursor: pointer;
+  background: var(--btnbackground);
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s;
+}
+
+button:active {
+  background-color: #fff;
+  color: #000;
 }

@@ -1,4 +1,6 @@
-export const productList = [
+import { Product } from '../types/product';
+
+export const productList: Array<Product> = [
   {
     name: 'Nike Runners',
     price: 150,
