@@ -2,6 +2,7 @@ import { Product } from '../types/product';
 
 export const productList: Array<Product> = [
   {
+    id: '1',
     name: 'Nike Runners',
     price: 150,
     picture:
@@ -10,6 +11,7 @@ export const productList: Array<Product> = [
       'The Nike Epic React Flyknit foam cushioning is responsive yet light-weight, durable yet soft. This creates a sensation that not only enhances the feeling of moving forward, but makes running feel fun, too.',
   },
   {
+    id: '2',
     name: 'Brush',
     price: 10,
     picture:
@@ -18,6 +20,7 @@ export const productList: Array<Product> = [
       'Whether you are painting a large area or fine, delicate details, brush for watercolor offer the power and precision you need to create a masterpiece.',
   },
   {
+    id: '3',
     name: 'Guitar',
     price: 1300,
     picture:
@@ -26,6 +29,7 @@ export const productList: Array<Product> = [
       'Size: Full Size, Top: Spruce, Back & Sides: Linden, Neck: Maple, Fingerboard: Rosewood, Scratchplate: Black',
   },
   {
+    id: '4',
     name: 'T-shirt',
     price: 40,
     picture:
