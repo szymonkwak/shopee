@@ -1,3 +1,5 @@
+import { addItem } from '../../../store/cartSlice';
+import { useAppDispatch } from '../../../store/hooks';
 import styles from './ProductCard.module.css';
 
 type ProductCardProps = {
@@ -9,8 +11,10 @@ type ProductCardProps = {
 };
 
 const ProductCard = ({ id, name, price, picture, description }: ProductCardProps) => {
+  const dispatch = useAppDispatch();
+
   const handleAddToCart = () => {
-    console.log(id);
+    dispatch(addItem({ id, name, price, picture, description }));
   };
 
   return (

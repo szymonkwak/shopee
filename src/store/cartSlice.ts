@@ -1,5 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit';
-import type { PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+// import type { PayloadAction } from '@reduxjs/toolkit';
 import { Product } from '../types/product';
 
 type CartState = Array<Product>;
@@ -10,8 +10,10 @@ export const cartSlice = createSlice({
   name: 'cart',
   initialState,
   reducers: {
-    addItem: (state, payload: PayloadAction<Product>) => {},
-    removeItem: (state, payload: PayloadAction<Product>) => {},
+    addItem: (state, action: PayloadAction<Product>) => {
+      state.push(action.payload);
+    },
+    removeItem: (state, action: PayloadAction<Product>) => {},
     clearCart: (state) => {
       state = [];
     },
